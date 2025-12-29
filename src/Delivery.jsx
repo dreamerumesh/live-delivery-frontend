@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import io from "socket.io-client";
 
-const socket = io(process.env.BackendUrl, {
+const socket = io(import.meta.env.VITE_BACKEND_URL, {
   path: "/socket.io",
   transports: ["websocket"]
 });

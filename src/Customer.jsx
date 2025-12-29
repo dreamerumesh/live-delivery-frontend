@@ -4,7 +4,7 @@ import io from "socket.io-client";
 import L from "leaflet";
 import AutoCenter from "./AutoCente";
 
-const socket = io(process.env.BackendUrl, {
+const socket = io(import.meta.env.VITE_BACKEND_URL, {
   path: "/socket.io",
   transports: ["websocket"]
 });
