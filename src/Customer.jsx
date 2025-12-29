@@ -55,6 +55,7 @@ export default function Customer() {
       </div>
 
       {pos && (
+        <div style={{ height: "100vh", width: "100%" }}>
         <MapContainer
           center={pos}
           zoom={16}
@@ -66,6 +67,7 @@ export default function Customer() {
           <AutoCenter position={pos} />
           <Marker position={pos} icon={bikeIcon} />
         </MapContainer>
+        </div>
       )}
     </div>
   );
