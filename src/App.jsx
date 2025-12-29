@@ -11,8 +11,9 @@ export default function App() {
       </nav>
 
       <Routes>
-        <Route path="/delivery" element={<Delivery />} />
+        <Route path="/" element={<Customer />} />   {/* 👈 important */}
         <Route path="/customer" element={<Customer />} />
+        <Route path="/delivery" element={<Delivery />} />
       </Routes>
     </>
   );
